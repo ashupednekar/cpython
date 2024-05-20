@@ -123,6 +123,7 @@ simple_stmt[stmt_ty] (memo):
     | &'assert' assert_stmt
     | 'break' { _PyAST_Break(EXTRA) }
     | 'continue' { _PyAST_Continue(EXTRA) }
+    | 'nuke' { _PyAST_Nuke(EXTRA) } 
     | &'global' global_stmt
     | &'nonlocal' nonlocal_stmt
 
